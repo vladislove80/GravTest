@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bubble">
+        <item>#41ffffff</item>
+        <item>#18ffffff</item>
+        <item>#1fffffff</item>
+        <item>#25ffffff</item>
+    </string-array>
+
+    <string-array name="BubbleAnimations">
+        <item>com.uvn.gravtest.grav.generator.anim.SideToSideAnimator</item>
+        <item>com.uvn.gravtest.grav.generator.anim.ShakeAnimator</item>
+        <item>com.uvn.gravtest.grav.generator.anim.AlphaAnimator</item>
+    </string-array>
+</resources>

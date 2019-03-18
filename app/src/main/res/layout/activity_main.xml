@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    tools:context=".MainActivity">
+
+    <com.uvn.gravtest.grav.GravView
+        android:id="@+id/grav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="50"
+        app:alpha_from="0"
+        app:alpha_max_duration="3000"
+        app:alpha_min_duration="1000"
+        app:alpha_to="128"
+        app:animationGenerators="@array/BubbleAnimations"
+        app:array_colors="@array/bubble"
+        app:ball_from_size="5dp"
+        app:ball_to_size="10dp"
+        app:colorGenerator="com.uvn.gravtest.grav.generator.paint.ArrayColorGenerator"
+        app:gravGenerator="com.uvn.gravtest.grav.generator.grav.BallGenerator"
+        app:pointGenerator="com.uvn.gravtest.grav.generator.point.RegularPointGenerator"
+        app:regular_cell_size="300"
+        app:regular_variance="300"
+        app:shake_direction="horizontal"
+        app:shake_max_duration="5000"
+        app:shake_min_duration="3000"
+        app:shake_variance="20dp"
+        app:side_to_side_direction="downToUp"
+        app:side_to_side_max_duration="15000"
+        app:side_to_side_min_duration="8000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
